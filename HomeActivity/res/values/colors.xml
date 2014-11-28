@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="grey">#ffcccccc</color>
+    <color name="light_grey">#ffededed</color>
+    <color name="red">#ffd90000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="dark_grey">#ff333333</color>
+    <color name="btn_red_bg">#E00101</color>
+    <color name="new_red">#eb4154</color>
+    <color name="yellow">#ffff00</color>
+    <color name="light_yellow">#80ffff00</color>
+    <color name="light_red">#80ff0000</color>
+
+    <drawable name="black">@color/black</drawable>
+    <drawable name="yellow">@color/yellow</drawable>
+    <drawable name="light_yellow">@color/light_yellow</drawable>
+    <drawable name="red">@color/red</drawable>
+    <drawable name="light_red">@color/light_red</drawable>
+    <drawable name="transparent">@color/transparent</drawable>
+    <drawable name="white">@color/white</drawable>
+    <drawable name="my_red">@color/new_red</drawable>
+
+    <color name="header">#fff9f9f9</color>
+    <color name="busbackgroud">#ffeb2100</color>
+    <color name="header1">#fffffdfa</color>
+    <color name="header2">#fffafafa</color>
+    <color name="header3">#fff2f2f2</color>
+
+</resources>

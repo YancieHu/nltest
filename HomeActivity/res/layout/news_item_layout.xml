@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vpi="http://schemas.android.com/apk/res/com.tidemedia.nntv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.tidemedia.nntv">
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" >
+
+        <ImageView
+            android:id="@+id/topImageView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu_bg" />
+
+        <TextView
+            android:id="@+id/topTextView"
+            style="@style/textStyle_white_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    -->
+
+    <FrameLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_rect_round_grey_white">
+
+        <com.tidemedia.nntv.view.ChildViewPager
+            android:id="@+id/newsGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:background="#9000"
+		    android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+		    <com.viewpagerindicator.CirclePageIndicator
+	            android:id="@+id/indicator"
+	            android:layout_centerInParent="true"
+	            android:layout_alignParentRight="true"
+	            android:padding="10dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            vpi:fillColor="@color/red"
+		        vpi:pageColor="@color/grey"
+		        vpi:strokeWidth="0px"/>
+		    <TextView android:id="@+id/topTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rgioeghoeirg"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:layout_toLeftOf="@id/indicator"
+                style="@style/textStyle_white_16"/>
+		</RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/downLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="150dp"
+            android:layout_height="70dp" >
+
+            <ImageView
+                android:id="@+id/downImageView"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:src="@drawable/default_150_70"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/videoMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                android:src="@drawable/ic_video_play48x48" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/downTextView"
+            style="@style/textStyle_black_16"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+</LinearLayout>

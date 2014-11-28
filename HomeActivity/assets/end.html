@@ -1,0 +1,40 @@
+<script>
+function playvideo(event, video){
+	event.preventDefault(); 
+	window.JSInterface.startVideo(video);
+	}
+	
+var resizeImg = function(img, maxWidth){
+	var w = img.width,h = img.height;
+	if(w <= maxWidth) 
+		return;
+	h = h*maxWidth/w;
+	w = maxWidth;
+	img.width = w;
+	img.height = h;
+	img.style.width = w;
+	img.style.height = h;
+}
+</script>
+<script>
+window.onload=function(){
+	try{
+		var images = document.getElementsByTagName("img");
+		if(images instanceof Array) {
+			for(var i = 0; i < images.length; i++) {
+				if(images[i].complete) {
+					resizeImg(images[i], 292);
+				} else {
+					images[i].onload=function(){
+						resizeImg(this, 292);
+					}
+				}
+			}
+		}
+	} catch(e) {
+		
+	}
+}
+</script>
+</body>
+</html>

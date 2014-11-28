@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <Preference
+        android:key="home"
+        android:layout="@layout/menu_home_layout"
+        />
+
+    <Preference
+        android:key="news"
+        android:layout="@layout/menu_news_layout"
+        />
+ <!-- 
+    <Preference
+        android:key="travel"
+        android:layout="@layout/menu_travel_layout"
+        />
+    
+    <Preference
+        android:key="food"
+        android:layout="@layout/menu_food_layout"
+        />
+ -->  
+    <Preference
+        android:key="images"
+        android:layout="@layout/menu_pic_layout"
+        />
+
+	<Preference 
+	    android:key="column"
+	    android:layout="@layout/menu_colum_layout"
+	    />
+	
+	<Preference
+        android:key="broadcastlive"
+        android:layout="@layout/menu_zhibo_layout"
+        />
+	
+	<Preference
+        android:key="yingyong"
+        android:layout="@layout/menu_yingyong_layout"
+        />
+	
+	<Preference
+        android:key="vote"
+        android:layout="@layout/menu_vote_layout"
+        />
+	
+	<Preference
+        android:key="disclose"
+        android:layout="@layout/menu_disclose_layout"
+        />
+	
+	<Preference
+        android:key="search"
+        android:layout="@layout/menu_search_layout"
+        />
+	
+	<Preference
+        android:key="setting"
+        android:layout="@layout/menu_setting_layout"
+        />
+	
+	<Preference
+        android:key="account"
+        android:layout="@layout/menu_account_layout"
+        />
+</PreferenceScreen>
